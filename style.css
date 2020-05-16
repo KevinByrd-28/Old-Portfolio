@@ -15,8 +15,8 @@ html {
     justify-content: left;
 }
 #portrait{
-    width: 7.5em;
-    height:auto;
+    width: 120px;
+    height:120px;
     border-radius: 50%;
     border: 1px solid grey;
     margin-top: 2em;
@@ -301,7 +301,7 @@ a:hover
 #skillsChild{
     display: flex;
     height: auto;
-    width: 15%;
+    width: 10rem;
     margin-right: 3em;
     margin-left: 3em;
     margin-bottom: 0;
@@ -710,7 +710,7 @@ border-top: 1px solid rgb(95, 95, 95);
   box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
  }
 .overlay{
-  opacity: 1;
+ 
 }
 .overlay img{
   width:6em;
