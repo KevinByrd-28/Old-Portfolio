@@ -301,7 +301,7 @@ a:hover
 #skillsChild{
     display: flex;
     height: auto;
-    width: 10rem;
+    width: 200px;
     margin-right: 3em;
     margin-left: 3em;
     margin-bottom: 0;
@@ -309,7 +309,7 @@ a:hover
 }
 #skillsChild img{
     height: auto;
-    width: 80%;
+    width: 160px;
     position:relative;
     transition: 0.35s;
 }
@@ -322,7 +322,7 @@ a:hover
   margin-top: -5em;
   background-color: whitesmoke;
   border:1px hidden white;
-  height: 45em;
+  height: 40em;
   width:100%;
 }
 .projects{
@@ -342,10 +342,10 @@ a:hover
 
 .projExample1{
   display:flex;
-  margin: 2em;
+  margin: 20px;
    overflow: hidden;
-   width: 30em;
-   height: 30em;
+   width: 400px;
+   height: 400px;
    background-image: url("asset/pokemon.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -354,10 +354,10 @@ a:hover
  }
  .projExample2{
   display:flex;
-  margin: 2em;
+  margin: 20px;
   overflow: hidden;
-  width: 30em;
-  height: 30em;
+  width: 400px;
+  height: 400px;
 
    background-image: url("asset/supercar.png");
    background-size: cover;
@@ -368,10 +368,10 @@ a:hover
 
  .projExample4{
   display:flex;
-  margin: 2em;
+  margin: 20px;
   overflow: hidden;
-  width: 30em;
-  height: 30em;
+  width: 400px;
+  height: 400px;
 
    background-image: url("asset/melty.png");
    background-size: cover;
@@ -407,7 +407,7 @@ a:hover
   cursor: pointer;
 }
 .overlay p{
-  margin:5em;
+  padding:3em;
 
   color: black;
   
@@ -585,7 +585,7 @@ textarea {
 }
 .resume3{
   margin-top: 0;
-  height: 55em; 
+  height: 700px; 
 }
 .resume3 h1{
   padding-top:1.5em;
@@ -674,8 +674,8 @@ border-top: 1px solid rgb(95, 95, 95);
   display:flex;
   margin: 2em;
    overflow: hidden;
-   width: 20em;
-   height: 20em;
+   width: 350px;
+   height: 350px;
    background-image: url("asset/pokemon.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -686,8 +686,8 @@ border-top: 1px solid rgb(95, 95, 95);
   display:flex;
   margin: 2em;
   overflow: hidden;
-  width: 20em;
-  height: 20em;
+  width: 350px;
+  height: 350px;
 
    background-image: url("asset/supercar.png");
    background-size: cover;
@@ -700,8 +700,8 @@ border-top: 1px solid rgb(95, 95, 95);
   display:flex;
   margin: 2em;
   overflow: hidden;
-  width: 20em;
-   height: 20em;
+  width: 350px;
+  height: 350px;
 
    background-image: url("asset/melty.png");
    background-size: cover;
