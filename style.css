@@ -300,7 +300,7 @@ a:hover
 }
 #skillsChild{
     display: flex;
-    height: auto;
+    height: 200px;
     width: 200px;
     margin-right: 3em;
     margin-left: 3em;
