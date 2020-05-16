@@ -110,7 +110,7 @@ html {
     margin-top: 10em;
     background-color:  rgba(245, 245, 245, 0.795);
     border:1px hidden white;
-    height: 35em;
+    height: 350px;
     width:100%;
     
 }
@@ -288,27 +288,26 @@ a:hover
 #skillsParent{
     display:flex;
     position: relative;
-    margin-top: -3em;
+    margin-top: 0em;
     width: 100%;
-    height: 100%;
+    height: 350px;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-    object-fit: contain;
+    flex-wrap: nowrap;
+    align-items: center;
+
+
     
    
 }
 #skillsChild{
+  margin-top: -100px;
     display: flex;
     height: 200px;
     width: 200px;
-    margin-right: 3em;
-    margin-left: 3em;
-    margin-bottom: 0;
-    margin-top: -7em;
+
 }
 #skillsChild img{
-    height: auto;
+    height: 160px;
     width: 160px;
     position:relative;
     transition: 0.35s;
@@ -319,7 +318,7 @@ a:hover
   
 }
 .projectParent{
-  margin-top: -5em;
+  margin-top: 0;
   background-color: whitesmoke;
   border:1px hidden white;
   height: 40em;
@@ -337,11 +336,12 @@ a:hover
   text-align: center;
   color: rgb(95, 95, 95);
   font-family: 'Raleway', sans-serif;
-  padding-top:1.5em;
+  padding-top:50px;
 }
 
 .projExample1{
   display:flex;
+  margin-top:75px;
   margin: 20px;
    overflow: hidden;
    width: 400px;
