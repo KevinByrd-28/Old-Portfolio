@@ -542,7 +542,7 @@ textarea {
 
 @media only screen and (max-width: 950px){
   body{
-    background-image: url(asset/cell.jpg);
+    background-image: url(asset/cellback.jpg);
     background-color: rgb(48, 48, 48);
     
     }
