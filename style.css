@@ -50,7 +50,7 @@ html {
     margin-left: auto;
     margin-right:auto;
     white-space: nowrap;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     /*background-color: rgba(165, 165, 165, 0.596);*/
     border:1px hidden white;
@@ -74,6 +74,21 @@ html {
     font-family: 'Raleway', sans-serif;
     outline: white;
 }
+.cell{
+  margin-top: -8em;
+  display: none;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+.cell h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: x-small;
+}
+
 .resume{
   color: rgb(95, 95, 95);
     margin-top: 15em;
@@ -326,7 +341,7 @@ a:hover
 }
 .projects{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
   
@@ -525,11 +540,25 @@ textarea {
   height: 220px;
 }
 
-@media only screen and (max-width: 1024px){
-
+@media only screen and (max-width: 950px){
+  body{
+    background-image: url(asset/cell.jpg);
+    background-color: rgb(48, 48, 48);
+    
+    }
+    #portrait{
+      width: 120px;
+      height:120px;
+      border-radius: 50%;
+      border: 1px solid rgb(53, 53, 53);
+      margin-top: 2em;
+      margin-left:2em;
+  }
   #innerProfile h1{
     margin:auto;
-    height:3em;
+    color: whitesmoke;
+    font-size: xx-large;
+    height:100px;
     padding-top: 5%;
     font-family: 'Raleway', sans-serif;
     z-index: 1;
@@ -537,6 +566,7 @@ textarea {
   #portTopCenter{
     display:flex;
     position: relative;
+    margin-top: -4em;
     margin-left: auto;
     margin-right:auto;
     white-space: nowrap;
@@ -551,8 +581,8 @@ textarea {
 }
 #portTopCenter h1{
     color: whitesmoke;
-    font-size: 300%;
-    margin-top: 4em;
+    font-size: 250%;
+    margin-top: 0;
     word-wrap:normal;
     font-family: 'Raleway', sans-serif;
     outline: white;
@@ -560,12 +590,27 @@ textarea {
 }
 #portTopCenter h2{
     color: whitesmoke;
-    font-size: 200%;
-    margin-top: -.5em;
+    font-size: 150%;
+    margin-top: 0;
     font-family: 'Raleway', sans-serif;
     outline: white;
 }
+.cell{
+  margin-top: 20em;
+  display: flex;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  height:auto;
+  margin-bottom: 2em;
 
+}
+.cell h2{
+  font-size: small;
+}
 
 
 
@@ -574,6 +619,7 @@ textarea {
     display:none;
 }
 .resume{
+  display: none;
     width:100%;
     border-bottom: 1px solid rgb(95, 95, 95);
     height:35em;
@@ -584,6 +630,8 @@ textarea {
   margin-right:0;
 }
 .resume3{
+  display: none;
+  visibility: hidden;
   margin-top: 0;
   height: 700px; 
 }
@@ -618,7 +666,9 @@ textarea {
 {
   display: none;
 }
+
 #skillsParent{
+  display: none;
   text-align: center;
   display: -webkit-box;
   display: -moz-box;
@@ -635,7 +685,7 @@ textarea {
  
 }
 #skillsChild{
-  display: flex;
+  display: hidden;
   height: auto;
   width: 20%;
   margin-right: 3em;
@@ -661,6 +711,7 @@ filter:drop-shadow(5px 5px 5px rgb(95, 95, 95));
   
 }
 .projectParent{
+  display: none;
 height:85em;
 border-top: 1px solid rgb(95, 95, 95);
 }
