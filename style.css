@@ -380,6 +380,19 @@ a:hover
   border-radius: 5px;
   box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
  }
+ .projExample3{
+  display:flex;
+  margin: 20px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+
+   background-image: url("asset/csharpapp.png");
+   background-size: cover;
+   border: 1px hidden whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
+ }
 
  .projExample4{
   display:flex;
@@ -413,16 +426,17 @@ a:hover
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  word-wrap: normal;
+  word-wrap: nowrap;
   
 }
 .overlay img{
+  padding-top: -2em;
   width:6em;
   height:auto;
   cursor: pointer;
 }
 .overlay p{
-  padding:3em;
+  padding:2em;
 
   color: black;
   
