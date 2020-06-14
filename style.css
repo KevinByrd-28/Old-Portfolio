@@ -1,3 +1,39 @@
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;  
+  background: transparent;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background:  #b23b3b;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
 body{
 background-image: url(asset/test3.jpg);
 background-repeat: no-repeat;
@@ -5,6 +41,9 @@ background-size: cover;
 overflow-x: hidden;
 
 background-attachment: fixed;
+}
+.entire{
+  background-color: rgba(245, 245, 245, 0.692);
 }
 html {
     scroll-behavior: smooth;
@@ -42,9 +81,9 @@ html {
 #testCenter{
     display:flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
-#portTopCenter{
+.portTopCenter{
     display:flex;
     position: relative;
     margin-left: auto;
@@ -56,24 +95,47 @@ html {
     border:1px hidden white;
     border-radius: 2px;
     text-align: center;
-    width: 40em;
+    width: auto;
     height:20em;
+    animation: fade; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
-#portTopCenter h1{
-    color: whitesmoke;
+.portTopCenter h1{
+    color: rgb(95, 95, 95);
     font-size: 400%;
     margin-top: 1em;
     font-family: 'Raleway', sans-serif;
     outline: white;
     z-index: 1;
 }
-#portTopCenter h2{
-    color: whitesmoke;
+.portTopCenter h2{
+    color: rgb(95, 95, 95);
     font-size: 200%;
     margin-top: -.5em;
     font-family: 'Raleway', sans-serif;
     outline: white;
 }
+
+.birdie img{
+  position:relative;
+  margin-top:0;
+  margin-bottom: -6.3em;
+  margin-right: -22.5em;
+  width: 125px;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.arrow img{
+  width:50px;
+}
+.arrow img:hover{
+	transform: scale(1.1);
+}
+
+
+
+
 .cell{
   margin-top: -8em;
   display: none;
@@ -90,39 +152,19 @@ html {
 }
 
 .resume{
-  color: rgb(95, 95, 95);
+  color:whitesmoke;
     margin-top: 15em;
-    background-color: rgba(245, 245, 245, 0.795);
-    border:1px hidden white;
-    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
-    height: 40em;
-    width:35%;
+    background-image: url("asset/collage6.JPG");
+    background-position: center;
+    height: auto;
+    max-height: 40em;
+    width:100%;
     overflow: hidden;
     
 }
 
-.resume2{
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: -40em;
-    margin-right:0em;
-    margin-left: auto;
-    background-color: whitesmoke;
-    border:1px hidden white;
-    height: 40em;
-    width:55%;
-    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
-}
-
-.resume2 img{
-    position:relative;
-    height:10em;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
 .resume3{
-    margin-top: 10em;
+
     background-color:  rgba(245, 245, 245, 0.795);
     border:1px hidden white;
     height: 350px;
@@ -130,11 +172,19 @@ html {
     
 }
 .resume h1{
-    height:3em;
-    padding-top: 3%;
+  padding-top: 3%;
     font-family: 'Raleway', sans-serif;
-    text-align: right;
-    margin-right:1em;
+    text-align: center;
+}
+.resume p{
+  color: whitesmoke;
+    align-content: center;
+    padding: 2em;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.15em;
+    /*font-size: 1.20vmax;*/
+    object-fit: cover;
 }
 .resume3 h1{
     height:3em;
@@ -144,20 +194,7 @@ html {
     text-align: center;
     margin-bottom:0;
 }
-.resume p{
-  color: rgb(95, 95, 95);
-    align-content: center;
-    margin-top: -3em;;
-    padding:10%;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-size: 1.15em;
-    /*font-size: 1.20vmax;*/
-    object-fit: cover;
-    
-    
 
-}
 
 .innerResume{
 height: 25em;
@@ -270,12 +307,13 @@ a:hover
  */
 #menu
 {
+  text-align: center;
   position: absolute;
   width: 300px;
   margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
-  right: -100px;
+  right: -55px;
   box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
   background:  rgba(245, 245, 245, 0.795);
   list-style-type: none;
@@ -336,15 +374,16 @@ a:hover
   margin-top: 0;
   background-color: whitesmoke;
   border:1px hidden white;
-  height: 40em;
+  height: auto;
   width:100%;
 }
 .projects{
+  padding-left: 1em;
+  padding-right:1em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
-  
 }
 
 .projectParent h1{
@@ -373,7 +412,6 @@ a:hover
   overflow: hidden;
   width: 400px;
   height: 400px;
-
    background-image: url("asset/supercar.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -400,13 +438,47 @@ a:hover
   overflow: hidden;
   width: 400px;
   height: 400px;
-
    background-image: url("asset/melty.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
   border-radius: 5px;
   box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
- }
+ /*   opacity:0;
+    -webkit-animation: fadeIn 1s 2.75s;
+    -moz-animation: fadeIn 1s 2.75s;
+    -o-animation: fadeIn 1s 2.75s;
+    -ms-animation: fadeIn 1s 2.75s;
+    animation: fadeIn 1s 2.75s;
+    -webkit-animation-fill-mode: forwards;
+      animation-fill-mode:forwards;*/
+  }
+  .projExample5{
+    display:flex;
+    margin-top:75px;
+    margin: 20px;
+     overflow: hidden;
+     width: 400px;
+     height: 400px;
+     background-image: url("asset/iRestaurant.PNG");
+     background-size: cover;
+     border: 1px hidden whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
+   }
+   .projExample6{
+    display:flex;
+    margin: 20px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+  
+     background-image: url("asset/springtree.PNG");
+     background-position: bottom;
+     background-size: cover;
+     border: 1px hidden whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
+   }
 
 
 .overlay{
@@ -454,6 +526,9 @@ a:hover
   opacity: 1;
 }
 .projExample5:hover .overlay {
+  opacity: 1;
+}
+.projExample6:hover .overlay {
   opacity: 1;
 }
 button{
@@ -553,6 +628,49 @@ textarea {
 
   height: 220px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 950px){
   body{
