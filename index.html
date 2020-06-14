@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Byrd's Portfolio</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
-    <script type="php" src="saveContact.php"></script>
 
-    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-    <link rel="shortcut icon" type="image/png" href="asset/favicon.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Byrd's Portfolio</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="js/contact.js"></script>
+  <script type="php" src="saveContact.php"></script>
+
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+  <link rel="shortcut icon" type="image/png" href="asset/favicon3.png">
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
 </head>
+
 <body>
- 
+  <div class="entire">
 
 
-   <header>
-    <a name="home"></a>
-    <nav role='navigation'>
+    <header>
+      <a name="home"></a>
+      <nav role='navigation'>
         <div id="menuToggle">
           <input type="checkbox" />
-        
+
           <span></span>
           <span></span>
           <span></span>
-         
+
           <ul id="menu">
-            <a href="#aboutMe"><li>About Me</li></a>
-            <a href="#technical"><li>Skills and Technical</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="asset/PortfolioResume2.pdf"><li>Resume</li></a>
-            <a href="" data-toggle="modal" data-target="#contact-modal"><li>Contact Me</li></a>
+            <a href="#aboutMe">
+              <li>About Me</li>
+            </a>
+            <a href="#technical">
+              <li>Skills and Technical</li>
+            </a>
+            <a href="#projects">
+              <li>Projects</li>
+            </a>
+            <a href="asset/PortfolioResume2.pdf">
+              <li>Resume</li>
+            </a>
+            <a href="" data-toggle="modal" data-target="#contact-modal">
+              <li>Contact Me</li>
+            </a>
           </ul>
         </div>
       </nav>
@@ -45,155 +58,225 @@
 
 
     <div id="contact-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3>Contact Me</h3>
-                </div>
-                <form id="contactForm" name="contact" role="form" action="https://formspree.io/maypqyyr" method="POST">
-                    <div class="modal-body">				
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" class="form-control"></textarea>
-                        </div>					
-                    </div>
-                    <div class="modal-footer">					
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <input type="submit" class="btn btn-success" id="submit">
-                    </div>
-                </form>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Contact Me</h3>
+          </div>
+          <form id="contactForm" name="contact" role="form" action="https://formspree.io/maypqyyr" method="POST">
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control"></textarea>
+              </div>
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <input type="submit" class="btn btn-success" id="submit">
+            </div>
+          </form>
         </div>
+      </div>
     </div>
 
 
 
 
 
-<div id="profileImage">
-    <img id="portrait" src="asset/portrait.jpg">
-    <div id="innerProfile"><h1> <span
-        class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "Creative.", "Veteran.", "Critical Thinker.", "I am a Developer." ]'>
-    </span></h1></div>
-</div>
-<div id=testCenter>
-<div id="portTopCenter">
+    <div id="profileImage">
+      <img id="portrait" src="asset/portrait.jpg">
+      <div id="innerProfile">
+        <h1> <span class="txt-rotate" data-period="2000"
+            data-rotate='[ "Creative.", "Veteran.", "Critical Thinker.", "I am a Developer." ]'>
+          </span></h1>
+      </div>
+    </div>
+    <div id=testCenter>
+      <div class="portTopCenter animate__fadeInUp">
+        <div class="birdie animate__animated animate__bounceInDown animate__delay-3s"><img src="asset/favicon2.png">
+        </div>
+        <div>
+          <h1>Kevin Michael Byrd</h1>
+        </div>
+        <div>
+          <h2>Junior Full Stack Developer</h2>
+        </div>
+        <button
+      class="arrow" type="submit" onclick="window.location.href = '#aboutMe'"><img
+        src="asset/arrow.png"></button>
+      </div>
 
-    <div><h1>Kevin Michael Byrd</h1></div>
-    <div><h2>Junior Full Stack Developer</h2></div>
-</div></div>
-<div class="cell"><h2>"Please Visit This Website On A Full Size Screen To See All Features."<br> -Management</h2></div>
+    </div>
+
+    
+
+    <div class="cell">
+      <h2>"Please Visit This Website On A Full Size Screen To See All Features."<br> -Management</h2>
+    </div>
 
 
 
-<div class="resume"><a name="aboutMe"></a><h1>About Me</h1>
-    <div id="scale"><p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my ability to reason and conceptualize - I can give a unique perspective on the task at hand. <br><br>As a former Anti-Terrorism Officer in the United States Air Force, my range of skills have taken me to the many different corners of this planet.  I am blessed to have experienced the adventures and built the relationships that have led me to today.<br><br>I hope that this journey I continue on will leave a legacy for my family and my community.</p></div>
-</div>
-<div class="resume2">
-    <img src="asset/collage1.jpg">
-    <img src="asset/collage3.jpg">
-    <img src="asset/collage4.jpg">
-    <img src="asset/collage6.JPG">
-</div>
+    <div class="resume"><a name="aboutMe"></a>
+      <h1>About Me</h1>
+        <p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my
+          ability
+          to reason and conceptualize - I can give a unique perspective on the task at hand. <br><br>As a former
+          Anti-Terrorism Officer in the United States Air Force, my range of skills have taken me to the many different
+          corners of this planet. I am blessed to have experienced the adventures and built the relationships that have
+          led me to today.<br><br>I hope that this journey I continue on will leave a legacy for my family and my
+          community.</p>
+    </div>
 
-<div class="resume3"><a name="technical"></a><h1>Technical Development Skills</h1>
-    <div id="skillsParent">
+    <div class="resume3"><a name="technical"></a>
+      <h1>Technical Development Skills</h1>
+      <div id="skillsParent">
         <div id="skillsChild"><img src="asset/HTML.png"></div>
         <div id="skillsChild"><img src="asset/CSS.png"></div>
         <div id="skillsChild"><img src="asset/CSHARP2.png"></div>
         <div id="skillsChild"><img src="asset/DOTNET2.png"></div>
+      </div>
+
+    </div>
+    <div class="projectParent">
+      <h1>Projects</h1>
+
+      <div class="row projects"><a name="projects"></a>
+        <div class="projExample4">
+          <div class="overlay">
+            <p>CodePen Creature - HTML, CSS</p><button type="submit"
+              onclick="window.location.href = 'https://codepen.io/KevinByrd-28/pen/dyYRXzo';"><img
+                src="asset/click.png"></button>
+          </div>
+        </div>
+        <div class="projExample2">
+          <div class="overlay">
+            <p>Simple StoreFront - HTML, CSS, JS</p><button type="submit"
+              onclick="window.location.href = 'https://kevinbyrd-28.github.io/PortfolioExample2/';"><img
+                src="asset/click.png"></button>
+          </div>
+        </div>
+        <div class="projExample3">
+          <div class="overlay">
+            <p>Simple Console Applications - C#</p><button type="submit"
+              onclick="window.location.href = 'https://github.com/KevinByrd-28/GoldBadge_Challenges';"><img
+                src="asset/click.png"></button>
+          </div>
+        </div>
+      </div>
+      
+        <div class="row projects"><a name="projects"></a>
+          <div class="projExample5">
+            <div class="overlay">
+              <p>Simple WebAPI "iRestaurant" - C#, ASP.NET, EF</p><button type="submit"
+                onclick="window.location.href = 'https://kevinbyrd-28.github.io/PortfolioExample2/';"><img
+                  src="asset/click.png"></button>
+            </div>
+          </div>
+          <div class="projExample6">
+            <div class="overlay">
+              <p>Client Website - HTML, CSS, JS</p><button type="submit"
+                onclick="window.location.href = 'https://springtreelandscapes.com';"><img
+                  src="asset/click.png"></button>
+            </div>
+          </div>
+          <div class="projExample1">
+            <div class="overlay">
+              <p>Pokemon Console Game - C#</p><button type="submit"
+                onclick="window.location.href = 'https://github.com/KevinByrd-28/PokemonGame';"><img
+                  src="asset/click.png"></button>
+            </div>
+          </div>
+        </div>
+
+
     </div>
 
-</div>
-<div class="projectParent"><h1>Projects</h1>
-<div class="projects"><a name="projects"></a>
-<div class="projExample1"><div class="overlay"><p>Pokemon Console Game - C#</p><button type="submit" onclick="window.location.href = 'https://github.com/KevinByrd-28/PokemonGame';"><img src="asset/click.png"></button></div></div>
-<div class="projExample2"><div class="overlay"><p>Simple StoreFront - HTML, CSS, JS</p><button type="submit" onclick="window.location.href = 'https://kevinbyrd-28.github.io/PortfolioExample2/';"><img src="asset/click.png"></button></div></div>
-<div class="projExample3"><div class="overlay"><p>Business Console Applications - C#</p><button type="submit" onclick="window.location.href = 'https://github.com/KevinByrd-28/GoldBadge_Challenges';"><img src="asset/click.png"></button></div></div>
-<div class="projExample4"><div class="overlay"><p>CodePen Creature - HTML, CSS</p><button type="submit" onclick="window.location.href = 'https://codepen.io/KevinByrd-28/pen/dyYRXzo';"><img src="asset/click.png"></button></div></div>
-
-
-</div>
-</div>
-
-</div>
-<footer>
-    <span>&copy;2020 by Kevin M. Byrd | </span><span id="span1">&nbsp;Professional Portfolio | </span><button class="footer" type="submit" onclick="window.location.href = 'https://www.linkedin.com/in/kevinbyrd123/';"><img src="asset/Lin.png"></button> | <button class="footer"  type="submit" onclick="window.location.href = 'https://github.com/KevinByrd-28';"><img src="asset/Git.png"></button></span>
-   
+  </div>
+  <footer>
+    <span>&copy;2020 by Kevin M. Byrd | </span><span id="span1">&nbsp;Professional Portfolio | </span><button
+      class="footer" type="submit" onclick="window.location.href = 'https://www.linkedin.com/in/kevinbyrd123/';"><img
+        src="asset/Lin.png"></button> | <button class="footer" type="submit"
+      onclick="window.location.href = 'https://github.com/KevinByrd-28';"><img src="asset/Git.png"></button></span>
 
 
 
 
-</footer>
-    
 
-<script> var TxtRotate = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-  };
-  
-  TxtRotate.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-  
-    
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-  
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
-    var that = this;
-    var delta = 300 - Math.random() * 100;
-  
-    if (this.isDeleting) { delta /= 2; }
-  
-    if (!this.isDeleting && this.txt === fullTxt && this.loopNum < 7) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
+  </footer>
+
+
+  <script> var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
       this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-    
-  
-    setTimeout(function() {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function() {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-rotate');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    };
+
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
-    }
-    $('pure JS.').click(function() {
-      $('.text-rotate').toRotate('pause');
-  });
-  };
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt && this.loopNum < 3) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      $('pure JS.').click(function () {
+        $('.text-rotate').toRotate('pause');
+      });
+    };
+  </script>
+
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 
 
@@ -202,7 +285,17 @@
 
 
 
-</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
 
 
@@ -214,5 +307,9 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </div>
 </body>
+
 </html>
