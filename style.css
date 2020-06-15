@@ -673,10 +673,14 @@ textarea {
 
 
 @media only screen and (max-width: 950px){
+  html{
+    overflow-x: hidden;
+  }
   body{
     background-image: none;
     background-color: whitesmoke;
     overflow-x: hidden;
+    position:relative;
   }
   .entire{
     padding: 2em;
