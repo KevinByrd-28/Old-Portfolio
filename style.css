@@ -371,6 +371,10 @@ a:hover
   
 }
 .projectParent{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin-top: 0;
   background-color: whitesmoke;
   border:1px hidden white;
@@ -379,7 +383,9 @@ a:hover
 }
 .projects{
   padding-left: 1em;
-  padding-right:1em;
+  padding-right: 1em;
+  position:relative;
+  width:auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -392,14 +398,19 @@ a:hover
   font-family: 'Raleway', sans-serif;
   padding-top:50px;
 }
+.row{
+  margin:none;
+}
 
 .projExample1{
+
+  position:relative;
   display:flex;
   margin-top:75px;
   margin: 20px;
    overflow: hidden;
-   width: 400px;
-   height: 400px;
+   width: 350px;
+   height: 350px;
    background-image: url("asset/pokemon.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -410,8 +421,8 @@ a:hover
   display:flex;
   margin: 20px;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
    background-image: url("asset/supercar.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -422,8 +433,8 @@ a:hover
   display:flex;
   margin: 20px;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 
    background-image: url("asset/csharpapp.png");
    background-size: cover;
@@ -436,8 +447,8 @@ a:hover
   display:flex;
   margin: 20px;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
    background-image: url("asset/melty.png");
    background-size: cover;
    border: 1px hidden whitesmoke;
@@ -457,8 +468,8 @@ a:hover
     margin-top:75px;
     margin: 20px;
      overflow: hidden;
-     width: 400px;
-     height: 400px;
+     width: 350px;
+     height: 350px;
      background-image: url("asset/iRestaurant.PNG");
      background-size: cover;
      border: 1px hidden whitesmoke;
@@ -469,8 +480,8 @@ a:hover
     display:flex;
     margin: 20px;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   
      background-image: url("asset/springtree.PNG");
      background-position: bottom;
@@ -482,10 +493,11 @@ a:hover
 
 
 .overlay{
+
   position: relative;
-  background-color: rgba(255, 255, 255, 0.459);
-  width:30em;
-  height:30em;
+  background-color: rgba(255, 255, 255, 0.644);
+  width:350px;
+  height:350px;
   transition: .5s ease;
   opacity:0;
   color: white;
@@ -502,7 +514,7 @@ a:hover
   
 }
 .overlay img{
-  padding-top: -2em;
+  margin-top: 3em;
   width:6em;
   height:auto;
   cursor: pointer;
