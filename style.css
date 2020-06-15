@@ -682,6 +682,9 @@ textarea {
     overflow-x: hidden;
     position:relative;
     width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
   }
   .entire{
     padding: 2em;
@@ -695,8 +698,7 @@ textarea {
     display: none;
   }
   #profileImage{
-    position:relative;
-    margin-top: 25%;
+    display:none;
   }
   #portrait{
     display:none;
@@ -712,7 +714,7 @@ textarea {
   .portTopCenter{
     display:flex;
     position: relative;
-    margin-top: 33.333%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right:auto;
     white-space: nowrap;
@@ -747,7 +749,7 @@ textarea {
   margin-right: -14em;
 }
 .cell{
-  margin-top: 66.666%;
+  margin-top: 33.333%;
   display: flex;
   color: rgb(95, 95, 95);
   text-align: center;
