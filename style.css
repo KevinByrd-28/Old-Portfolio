@@ -759,7 +759,6 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
   height:auto;
-  margin-bottom: 10%;
   animation: fade; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
@@ -936,8 +935,7 @@ border-top: 1px solid rgb(95, 95, 95);
   display: none;
 }
 footer{
-  position: absolute;
-  margin-top: 100%;
+  position: relative;
   width:100%;
 }
 
