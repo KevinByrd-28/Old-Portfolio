@@ -681,6 +681,7 @@ textarea {
     background-color: whitesmoke;
     overflow-x: hidden;
     position:relative;
+    width:100%;
   }
   .entire{
     padding: 2em;
