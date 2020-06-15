@@ -676,6 +676,7 @@ textarea {
   body{
     background-image: none;
     background-color: whitesmoke;
+    overflow-x: hidden;
   }
   .entire{
     padding: 2em;
