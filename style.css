@@ -137,8 +137,8 @@ html {
 
 
 .cell{
+  display:none;
   margin-top: -8em;
-  display: none;
   color: whitesmoke;
   text-align: center;
   align-items: center;
@@ -674,31 +674,39 @@ textarea {
 
 @media only screen and (max-width: 950px){
   body{
-    background-image: url(asset/cellback.jpg);
-    background-color: rgb(48, 48, 48);
-    
-    }
-    #portrait{
-      width: 120px;
-      height:120px;
-      border-radius: 50%;
-      border: 1px solid rgb(53, 53, 53);
-      margin-top: 2em;
-      margin-left:2em;
+    background-image: none;
+    background-color: whitesmoke;
+  }
+  .entire{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200%;
+  }
+  .arrow{
+    display: none;
+  }
+  #profileImage{
+    position:relative;
+    margin-top: 25%;
+  }
+  #portrait{
+    display:none;
+    width: 75%;
+    margin-top:25%;
+    height:auto;
+    border-radius: 50%;
+    border: 1px solid rgb(53, 53, 53);
   }
   #innerProfile h1{
-    margin:auto;
-    color: whitesmoke;
-    font-size: xx-large;
-    height:100px;
-    padding-top: 5%;
-    font-family: 'Raleway', sans-serif;
-    z-index: 1;
+    display:none;
 }
-  #portTopCenter{
+  .portTopCenter{
     display:flex;
     position: relative;
-    margin-top: -4em;
+    margin-top: 33.333%;
     margin-left: auto;
     margin-right:auto;
     white-space: nowrap;
@@ -711,8 +719,8 @@ textarea {
     width: 40em;
     height:20em;
 }
-#portTopCenter h1{
-    color: whitesmoke;
+.portTopCenter h1{
+    color: rgb(95, 95, 95);
     font-size: 250%;
     margin-top: 0;
     word-wrap:normal;
@@ -720,30 +728,40 @@ textarea {
     outline: white;
     z-index: 1;
 }
-#portTopCenter h2{
-    color: whitesmoke;
+.portTopCenter h2{
+    color: rgb(95, 95, 95);
     font-size: 150%;
     margin-top: 0;
     font-family: 'Raleway', sans-serif;
     outline: white;
 }
+.birdie img{
+  width:75px;
+  margin-bottom: -1.4em;
+  margin-right: -14em;
+}
 .cell{
-  margin-top: 20em;
+  margin-top: 66.666%;
   display: flex;
-  color: whitesmoke;
+  color: rgb(95, 95, 95);
   text-align: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-family: 'Raleway', sans-serif;
   font-style: italic;
   height:auto;
-  margin-bottom: 2em;
-
+  margin-bottom: 10%;
+  animation: fade; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 .cell h2{
-  font-size: small;
+  font-size: 100%;
 }
-
+.cell button img{
+  width: 100px;
+  margin-bottom:10em;
+}
 
 
 
@@ -909,7 +927,11 @@ border-top: 1px solid rgb(95, 95, 95);
 #span1{
   display: none;
 }
-
+footer{
+  position: absolute;
+  margin-top: 100%;
+  width:100%;
+}
 
 
 
