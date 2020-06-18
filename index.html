@@ -130,7 +130,7 @@
 
 
 
-    <div class="resume"><a name="aboutMe"></a>
+    <div class="resume" id="aboutMe">
       <h1>About Me</h1>
         <p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my
           ability
@@ -150,10 +150,10 @@
       </div>
 
     </div>
-    <div class="projectParent">
+    <div class="projectParent" id="projects">
       <h1>Projects</h1>
 
-      <div class="row projects"><a name="projects"></a>
+      <div class="row projects">
         <div class="projExample4">
           <div class="overlay">
             <p>CodePen Creature - HTML, CSS</p><button type="submit"
@@ -177,7 +177,7 @@
         </div>
       </div>
       
-        <div class="row projects"><a name="projects"></a>
+        <div class="row projects">
           <div class="projExample5">
             <div class="overlay">
               <p>Simple WebAPI "iRestaurant" - C#, ASP.NET, EF, REST</p><button type="submit"
@@ -216,7 +216,33 @@
 
 
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "learn") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>-->
 
   <script> var TxtRotate = function (el, toRotate, period) {
       this.toRotate = toRotate;
@@ -291,7 +317,7 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
