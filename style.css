@@ -694,6 +694,9 @@ textarea {
   html{
     overflow-x: hidden;
   }
+  .button{
+    display:none;
+  }
   body{
     background-image: none;
     background-color: whitesmoke;
