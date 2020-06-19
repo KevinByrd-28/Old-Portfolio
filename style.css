@@ -126,10 +126,10 @@ html {
   animation-duration: 3s; /* don't forget to set a duration! */
 }
 
-.arrow img{
+#testCenter a img{
   width:50px;
 }
-.arrow img:hover{
+#testCenter a img:hover{
 	transform: scale(1.1);
 }
 
