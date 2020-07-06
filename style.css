@@ -152,20 +152,25 @@ html {
 }
 
 .resume{
-  color:whitesmoke;
-    margin-top: 15em;
-    background-image: url("asset/collage6.JPG");
-    background-position: center;
-    height: auto;
-    max-height: 40em;
-    width:100%;
-    overflow: hidden;
-    
+  color: rgb(95, 95, 95);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15em;
+  /*background-image: url("asset/collage6.JPG");*/
+  background-color:  rgba(245, 245, 245, 0.5);
+  background-position: center;
+  height: auto;
+  max-height: 40em;
+  width:100%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .resume3{
 
-    background-color:  rgba(245, 245, 245, 0.795);
+    background-color:  rgba(245, 245, 245, 0.750);
     border:1px hidden white;
     height: 350px;
     width:100%;
@@ -177,9 +182,10 @@ html {
     text-align: center;
 }
 .resume p{
-  color: whitesmoke;
+  color: rgb(95, 95, 95);
     align-content: center;
     padding: 2em;
+    max-width: 70%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 1.15em;
@@ -393,9 +399,9 @@ a:hover
   position:relative;
   width:auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .projectParent h1{
@@ -406,6 +412,7 @@ a:hover
 }
 .row{
   margin:none;
+
 }
 
 .projExample1{
@@ -496,8 +503,34 @@ a:hover
     border-radius: 5px;
     box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
    }
-
-
+   .projExample7{
+    display:flex;
+    margin: 20px;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+  
+     background-image: url("asset/meemme.PNG");
+     background-position: bottom;
+     background-size: cover;
+     border: 1px hidden whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
+   }
+   .projExample8{
+    display:flex;
+    margin: 20px;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+  
+     background-image: url("asset/pokemon.PNG");
+     background-position: bottom;
+     background-size: cover;
+     border: 1px hidden whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 .5px 3px .5px rgba(71, 71, 71, 0.705);
+   }
 .overlay{
 
   position: relative;
@@ -547,6 +580,12 @@ a:hover
   opacity: 1;
 }
 .projExample6:hover .overlay {
+  opacity: 1;
+}
+.projExample7:hover .overlay {
+  opacity: 1;
+}
+.projExample8:hover .overlay {
   opacity: 1;
 }
 button{

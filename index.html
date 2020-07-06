@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Kevin Byrd's Portfolio</title>
   <link rel="stylesheet" href="bootstrap.css">
@@ -14,6 +14,9 @@
 
   <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
   <link rel="shortcut icon" type="image/png" href="asset/favicon3.png">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -113,17 +116,16 @@
         <div>
           <h2>Junior Full Stack Developer</h2>
         </div>
-        <a href="#aboutMe" class="button"><img
-        src="asset/arrow.png"></a>
+        <a href="#aboutMe" class="button"><img src="asset/arrow.png"></a>
       </div>
 
     </div>
 
-    
+
 
     <div class="cell animate__animated animate__fadeIn animate__delay-3s">
-      <button type="submit"
-      onclick="window.location.href = 'asset/PortfolioResume4.pdf';"><img src="asset/curriculum.png"></button>
+      <button type="submit" onclick="window.location.href = 'asset/PortfolioResume4.pdf';"><img
+          src="asset/curriculum.png"></button>
       <h2>Please Visit This Website On A Full Size Screen To See All Features.</h2>
     </div>
 
@@ -131,21 +133,23 @@
 
     <div class="resume" id="aboutMe">
       <h1>About Me</h1>
-        <p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my
-          ability
-          to reason and conceptualize - I can give a unique perspective on the task at hand. <br><br>As a former
-          Anti-Terrorism Officer in the United States Air Force and former executive protection team-leader, my range of skills have taken me to the many different
-          corners of this planet. I am blessed to have experienced the adventures and built the relationships that have led me to today.</p>
-          <h3>"It's life that writes the best stories."</h3>
+      <p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my
+        ability
+        to reason and conceptualize - I can give a unique perspective on the task at hand. <br><br>As a former
+        Anti-Terrorism Officer in the United States Air Force and former executive protection team-leader, my range of
+        skills have taken me to the many different
+        corners of this planet. I am blessed to have experienced the adventures and built the relationships that have
+        led me to today.</p>
+      <h3>"It's life that writes the best stories."</h3>
     </div>
 
     <div class="resume3" id="technical">
       <h1>Technical Development Skills</h1>
       <div id="skillsParent">
-        <div id="skillsChild"><img src="asset/HTML.png"></div>
-        <div id="skillsChild"><img src="asset/CSS.png"></div>
-        <div id="skillsChild"><img src="asset/CSHARP2.png"></div>
-        <div id="skillsChild"><img src="asset/DOTNET2.png"></div>
+        <div data-aos="fade-down-right" data-aos-duration="1500" id="skillsChild"><img src="asset/HTML.png"></div>
+        <div data-aos="fade-up" data-aos-duration="1500" id="skillsChild"><img src="asset/CSS.png"></div>
+        <div data-aos="fade-up" data-aos-duration="1500" id="skillsChild"><img src="asset/CSHARP2.png"></div>
+        <div data-aos="fade-down-left" data-aos-duration="1500" id="skillsChild"><img src="asset/DOTNET2.png"></div>
       </div>
 
     </div>
@@ -153,54 +157,59 @@
       <h1>Projects</h1>
 
       <div class="row projects">
-        <div class="projExample4">
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="250" class="projExample4">
           <div class="overlay">
             <p>CodePen Creature - HTML, CSS</p><button type="submit"
               onclick="window.location.href = 'https://codepen.io/KevinByrd-28/pen/dyYRXzo';"><img
                 src="asset/click.png"></button>
           </div>
         </div>
-        <div class="projExample2">
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="500" class="projExample2">
           <div class="overlay">
-            <p>Simple StoreFront - HTML, CSS, JS</p><button type="submit"
+            <p>StoreFront Mock Website- HTML, CSS, JS</p><button type="submit"
               onclick="window.location.href = 'https://kevinbyrd-28.github.io/PortfolioExample2/';"><img
                 src="asset/click.png"></button>
           </div>
         </div>
-        <div class="projExample3">
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="750" class="projExample3">
           <div class="overlay">
             <p>Simple Console Applications - C#</p><button type="submit"
               onclick="window.location.href = 'https://github.com/KevinByrd-28/GoldBadge_Challenges';"><img
                 src="asset/click.png"></button>
           </div>
         </div>
-      </div>
-      
-        <div class="row projects">
-          <div class="projExample5">
-            <div class="overlay">
-              <p>Simple WebAPI "iRestaurant" - C#, ASP.NET, EF, REST</p><button type="submit"
-                onclick="window.location.href = 'https://kevinbyrd-28.github.io/iRestaurant2.0/';"><img
-                  src="asset/click.png"></button>
-            </div>
-          </div>
-          <div class="projExample6">
-            <div class="overlay">
-              <p>Client Website - HTML, CSS, JS</p><button type="submit"
-                onclick="window.location.href = 'https://springtreelandscapes.com';"><img
-                  src="asset/click.png"></button>
-            </div>
-          </div>
-          <div class="projExample1">
-            <div class="overlay">
-              <p>Business Website - HTML, CSS, JS</p><button type="submit"
-                onclick="window.location.href = 'https://pandiontactical.com';"><img
-                  src="asset/click.png"></button>
-            </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1000" class="projExample5">
+          <div class="overlay">
+            <p>Simple WebAPI "iRestaurant" - C#, ASP.NET, EF, REST</p><button type="submit"
+              onclick="window.location.href = 'https://kevinbyrd-28.github.io/iRestaurant2.0/';"><img
+                src="asset/click.png"></button>
           </div>
         </div>
-
-
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1250" class="projExample6">
+          <div class="overlay">
+            <p>Client Website - HTML, CSS, JS</p><button type="submit"
+              onclick="window.location.href = 'https://springtreelandscapes.com';"><img src="asset/click.png"></button>
+          </div>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1500" class="projExample8">
+          <div class="overlay">
+            <p>Console Game "Pokemon"- C#</p><button type="submit"
+              onclick="window.location.href = 'https://kevinbyrd-28.github.io/PokemonGame/';"><img src="asset/click.png"></button>
+          </div>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1750" class="projExample1">
+          <div class="overlay">
+            <p>Artistic Informational Website - HTML, CSS, JS</p><button type="submit"
+              onclick="window.location.href = 'https://pandiontactical.com';"><img src="asset/click.png"></button>
+          </div>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="2000" class="projExample7">
+          <div class="overlay">
+            <p>WebMVC Project - C#, ASP.NET, EF, REST, BOOTSTRAP, HTML, CSS, JS</p><button type="submit"
+              onclick="window.location.href = 'https://kevinbyrd-28.github.io/MeemME/';"><img src="asset/click.png"></button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -243,7 +252,9 @@
   });
   </script>-->
 
-
+  <script>
+    AOS.init();
+  </script>
   <script> var TxtRotate = function (el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
@@ -336,9 +347,9 @@
 
 
 
-    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-    <script src="zenscroll-min.js"></script> 
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+  <script src="zenscroll-min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   </div>
