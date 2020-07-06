@@ -524,7 +524,7 @@ a:hover
     width: 350px;
     height: 350px;
   
-     background-image: url("asset/pokemon.PNG");
+     background-image: url("asset/pokemon.png");
      background-position: bottom;
      background-size: cover;
      border: 1px hidden whitesmoke;
