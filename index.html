@@ -8,6 +8,9 @@
   <title>Kevin Byrd's Portfolio</title>
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dist/less.css">
+  <link rel="stylesheet" href="dist/SCSS.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
   <script type="text/javascript" src="js/contact.js"></script>
   <script type="php" src="saveContact.php"></script>
@@ -26,136 +29,170 @@
   <meta property="og:image:height" content="200">
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn">
   <div class="entire">
 
-
-    <header>
-      <a name="home"></a>
-      <nav role='navigation'>
-        <div id="menuToggle">
-          <input type="checkbox" />
-
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <ul id="menu">
-            <a href="#aboutMe" class="button">
-              <li>About Me</li>
-            </a>
-            <a href="#technical">
-              <li>Skills and Technical</li>
-            </a>
-            <a href="#projects">
-              <li>Projects</li>
-            </a>
-            <!--<a href="asset/KByrd Resume 8_2020.pdf" target="_blank">
-              <li>Resume</li>
-            </a>-->
-            <a href="" data-toggle="modal" data-target="#contact-modal">
-              <li>Contact Me</li>
-            </a>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-
-
-
-    <div id="contact-modal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3>Contact Me</h3>
-          </div>
-          <form id="contactForm" name="contact" role="form" action="https://formspree.io/maypqyyr" method="POST">
-            <div class="modal-body">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" class="form-control"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <input type="submit" class="btn btn-success" id="submit">
-            </div>
-          </form>
-        </div>
-      </div>
+    <div id="menu" class="animate__animated animate__slideInLeft animate__delay-3s">
+      <a href="https://www.linkedin.com/in/kevinbyrd123/"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/kevinbyrd123/"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/KevinByrd-28"><i class="fab fa-github-alt fa-2x"></i></a>
     </div>
 
-
-
-
-
-    <div id="profileImage">
-      <img id="portrait" src="asset/portrait.jpg">
-      <div id="innerProfile">
-        <h1> <span class="txt-rotate" data-period="2000"
-            data-rotate='[ "Creative.", "Veteran.", "Critical Thinker.", "I am a Developer." ]'>
-          </span></h1>
+    <div class="portTopCenter animate__fadeIn">
+      <div class="birdie animate__animated animate__bounceInDown animate__delay-2s"><img src="asset/favicon2.png">
+      </div>
+      <div>
+        <h1>Kevin Michael Byrd</h1>
+      </div>
+      <div>
+        <h2><i>Creative</i> | <b style="color:#b23b3b;">Full Stack Developer</b> | <i>Designer</i></h2>
+      </div>
+      <div class="buttons">
+        <button class="button7" data-toggle="modal" data-target="#skills">
+          Technical Skills
+        </button>
+        <button class="button7" data-toggle="modal" data-target="#projects">
+          Past Projects
+        </button>
+        <button class="button7" onclick="window.location.href='mailto: kevinbyrd.SD@gmail.com'">
+          Request A Quote
+        </button>
       </div>
     </div>
-    <div id=testCenter>
-      <div class="portTopCenter animate__fadeInUp">
-        <div class="birdie animate__animated animate__bounceInDown animate__delay-3s"><img src="asset/favicon2.png">
-        </div>
-        <div>
-          <h1>Kevin Michael Byrd</h1>
-        </div>
-        <div>
-          <h2>Junior Full Stack Developer</h2>
-        </div>
-        <a href="#aboutMe" class="button"><img src="asset/arrow.png"></a>
-      </div>
-
-    </div>
-
 
 
     <div class="cell animate__animated animate__fadeIn animate__delay-3s">
       <!--<button type="submit" onclick="window.location.href = 'asset/KByrd Resume 8_2020.pdf';"><img
-          src="asset/curriculum.png"></button>-->
+          src="asset/resume-and-cv.png"></button>-->
       <h2>Please Visit This Website On A Full Size Screen To See All Features.</h2>
     </div>
 
-
-
-    <div class="resume" id="aboutMe">
-      <h1>About Me</h1>
-      <p>I enjoy taking a blended approach to each project I work on. By adapting my natural creativity with my
-        ability
-        to reason and conceptualize - I can give a unique perspective on the task at hand. <br><br>As a former
-        Anti-Terrorism Officer in the United States Air Force and former executive protection team-leader, my range of
-        skills have taken me to the many different
-        corners of this planet. I am blessed to have experienced the adventures and built the relationships that have
-        led me to today.</p>
-      <h3>"It's life that writes the best stories."</h3>
-    </div>
-
-    <div class="resume3" id="technical">
-      <h1>Technical Development Skills</h1>
-      <div id="skillsParent">
-        <div data-aos="fade-down-right" data-aos-duration="1500" id="skillsChild"><img src="asset/HTML.png"></div>
-        <div data-aos="fade-up" data-aos-duration="1500" id="skillsChild"><img src="asset/CSS.png"></div>
-        <div data-aos="fade-up" data-aos-duration="1500" id="skillsChild"><img src="asset/CSHARP2.png"></div>
-        <div data-aos="fade-down-left" data-aos-duration="1500" id="skillsChild"><img src="asset/DOTNET2.png"></div>
+    <div class="modal" tabindex="-1" id="skills">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <article>
+            <div class='skillsContainer'>
+              <h5>Technical Skills</h5>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>HTML</p>
+                </div>
+                <div id='oneBar' class='barz' data-percentage="69.6%"></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>CSS</p>
+                </div>
+                <div id='twoBar' class='barz' data-percentage="69.6%"></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>{Less}</p>
+                </div>
+                <div id='threeBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Js</p>
+                </div>
+                <div id='fourBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>C#</p>
+                </div>
+                <div id='fiveBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>ASP.NET</p>
+                </div>
+                <div id='sixBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>@Razor Pages</p>
+                </div>
+                <div id='sevenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>MVC Architecture</p>
+                </div>
+                <div id='eightBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>GIMP</p>
+                </div>
+                <div id='nineBar' class='barz'></div>
+              </div>
+              <h5>Content Managment Systems</h5>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Wix</p>
+                </div>
+                <div id='tenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Weebly</p>
+                </div>
+                <div id='elevenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Wordpress</p>
+                </div>
+                <div id='twelveBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Shopify</p>
+                </div>
+                <div id='thirteenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>DynamicWeb</p>
+                </div>
+                <div id='fourteenBar' class='barz'></div>
+              </div>
+              <h5>Integrated Development Environments</h5>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>GitHub</p>
+                </div>
+                <div id='fifteenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>JetBrains Rider</p>
+                </div>
+                <div id='sixteenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Visual Studio</p>
+                </div>
+                <div id='seventeenBar' class='barz'></div>
+              </div>
+              <div class='rowz'>
+                <div class='skill'>
+                  <p>Azure DevOps</p>
+                </div>
+                <div id='eighteenBar' class='barz'></div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-
     </div>
-    <div class="projectParent" id="projects">
-      <h1>Projects</h1>
 
+    <div class="modal" tabindex="-1" id="projects">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h5>Projects</h5>
       <div class="row projects">
         <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="250" class="projExample4">
           <div class="overlay">
@@ -210,48 +247,19 @@
           </div>
         </div>
       </div>
+        </div>
+      </div>
     </div>
 
   </div>
-  <footer>
+  <!--<footer>
     <span>&copy;2020 by Kevin M. Byrd | </span><span id="span1">&nbsp;Professional Portfolio | </span><button
       class="footer" type="submit" onclick="window.location.href = 'https://www.linkedin.com/in/kevinbyrd123/';"><img
         src="asset/Lin.png"></button> | <button class="footer" type="submit"
       onclick="window.location.href = 'https://github.com/KevinByrd-28';"><img src="asset/Git.png"></button></span>
+  </footer>-->
 
-
-
-
-
-  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--<script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "learn") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>-->
-
   <script>
     AOS.init();
   </script>
@@ -328,7 +336,6 @@
 
 
 
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -338,21 +345,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
   <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
   <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
   <script src="zenscroll-min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  </div>
 </body>
 
 </html>
