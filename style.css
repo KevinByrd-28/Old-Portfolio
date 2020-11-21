@@ -295,7 +295,10 @@ footer {
     overflow-x: hidden;
   }
   .button{
-    display:none;
+    width: 75%;
+  }
+  .button7{
+    display: none;
   }
   body{
     background-image: none;
@@ -316,63 +319,65 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 200%;
+    height: 100%;
+    width: 100%;
   }
-  .arrow{
-    display: none;
+  #menu{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
   }
-  #profileImage{
-    display:none;
-  }
-  #portrait{
-    display:none;
-    width: 75%;
-    margin-top:25%;
-    height:auto;
-    border-radius: 50%;
-    border: 1px solid rgb(53, 53, 53);
-  }
-  #innerProfile h1{
-    display:none;
-}
   .portTopCenter{
     display:flex;
     position: relative;
-    margin-top: 10%;
     margin-left: auto;
     margin-right:auto;
-    white-space: nowrap;
+    width: 75% !important;
+    margin-top: 50%;
+    margin-bottom: 40%;
+    height: auto;
+    width: auto;
     justify-content: center;
     flex-wrap: wrap;
     /*background-color: rgba(165, 165, 165, 0.596);*/
     border:1px hidden white;
     border-radius: 2px;
     text-align: center;
-    width: 40em;
-    height:20em;
-}
-.portTopCenter h1{
+  }
+  .portTopCenter h1{
     color: rgb(95, 95, 95);
-    font-size: 250%;
+    font-size: 6vw;
     margin-top: 0;
     word-wrap:normal;
     font-family: 'Raleway', sans-serif;
     outline: white;
+    text-align: center;
     z-index: 1;
-}
-.portTopCenter h2{
+  }
+  .portTopCenter h2{
     color: rgb(95, 95, 95);
-    font-size: 150%;
+    font-size: 3vw;
     margin-top: 0;
     font-family: 'Raleway', sans-serif;
     outline: white;
-}
-.birdie img{
-  width:75px;
-  margin-bottom: -1.4em;
-  margin-right: -14em;
-}
-.cell{
+  }
+  .birdie{
+    width: 75%;
+    height: auto;
+    z-index: 10;
+  }
+  .birdie img{
+  display: none;
+  }
+  .cell{
   margin-top: 25%;
   margin-bottom: 25%;
   display: flex;
@@ -386,105 +391,15 @@ footer {
   height:auto;
   animation: fade; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-}
-.cell h2{
-  font-size: 100%;
-}
-.cell button img{
+  }
+  .cell h2{
+  font-size: 2vw;
+  }
+  .cell button img{
   width: 100px;
   margin-bottom:10em;
-}
+  }
 
-
-
-  .resume2{
-    display:none;
-}
-.resume{
-  display: none;
-    width:100%;
-    border-bottom: 1px solid rgb(95, 95, 95);
-    height:35em;
-}
-.resume h1{
-  padding-top:1.25em;
-  text-align: center;
-  margin-right:0;
-}
-.resume3{
-  display: none;
-  visibility: hidden;
-  margin-top: 0;
-  height: 700px; 
-}
-.resume3 h1{
-  padding-top:1.5em;
-  padding-bottom:1em;
-  text-align: center;
-  margin-right:0;
-  font-size: 2em;
-}
-#menuToggle
-{
-  display: none;
-}
-#menuToggle input
-{
-  display: none;
-}
-#menuToggle span
-{
-  display: none;
-}
-#menu
-{
-  display: none;
-}
-#menu li
-{
-  display: none;
-}
-#menuToggle input:checked ~ ul
-{
-  display: none;
-}
-
-#skillsParent{
-  display: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:flex;
-  position: relative;
-  margin-top: -3em;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-content: space-around;
-  
- 
-}
-#skillsChild{
-  display: hidden;
-  height: auto;
-  width: 20%;
-  margin-right: 3em;
-  margin-left: 3em;
-  margin-bottom: 0;
-  margin-top: -7em;
-}
-#skillsChild img{
-  height: auto;
-  width: 80%;
-  position:relative;
-  transition: 0.35s;
-}
-#skillsChild img:hover{
--webkit-filter: drop-shadow(5px 5px 5px rgb(95, 95, 95));
-filter:drop-shadow(5px 5px 5px rgb(95, 95, 95));
-}
 .projects{
   display: flex;
   flex-direction: column;
