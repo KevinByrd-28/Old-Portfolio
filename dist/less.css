@@ -326,6 +326,12 @@ a:hover {
     width: 75%;
   }
 }
+.pro-work {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
 .pulsate-bck {
   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
   animation: pulsate-bck 0.5s ease-in-out infinite both;
